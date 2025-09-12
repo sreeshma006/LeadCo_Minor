@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LeadCo Miner </title>
+
+  <style>
+    /* Reset & base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #f9f9fb, #eef3f7);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 2rem 2rem;
+      animation: fadeInDown 1s ease;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      background: linear-gradient(90deg, #0077ff, #00c6ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.8rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    /* Tool grid */
+    .tools-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+      gap: 2rem;
+      width: 100%;
+      max-width: 1200px;
+      padding: 2rem;
+      animation: fadeInUp 1s ease;
+    }
+
+    .tool-card {
+      background: #ffffff;
+      border: 1px solid #e0e0e0;
+      border-radius: 18px;
+      padding: 1.5rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .tool-card:hover {
+      transform: translateY(-8px) scale(1.01);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .tool-card h2 {
+      margin-bottom: 0.8rem;
+      font-size: 1.4rem;
+      text-align: center;
+      color: #0077ff;
+    }
+
+    .tool-card p {
+      font-size: 1rem;
+      color: #444;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .tool-card3 {
+      background: #ffffff;
+      border: 1px solid #e0e0e0;
+      border-radius: 18px;
+      padding: 1.5rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      grid-column: span 2; /* Span two columns */
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border-radius: 12px;
+      border: none;
+    }
+
+    /* Feedback section */
+    .feedback-section {
+      width: 100%;
+      max-width: 900px;
+      background: #ffffff;
+      border: 1px solid #e0e0e0;
+      border-radius: 18px;
+      margin: 3rem auto;
+      padding: 2rem;
+      text-align: center;
+      animation: fadeInUp 1s ease;
+    }
+
+    .feedback-section h2 {
+      font-size: 1.8rem;
+      color: #0077ff;
+      margin-bottom: 1rem;
+    }
+
+    .feedback-section p {
+      font-size: 1rem;
+      color: #444;
+      margin-bottom: 2rem;
+    }
+
+    .feedback-section iframe {
+      width: 100%;
+      height: 900px;
+      border-radius: 12px;
+    }
+
+    /* Footer */
+    footer {
+      background: #0d1b2a;
+      color: #eee;
+      width: 100%;
+      margin-top: 3rem;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    footer h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.8rem;
+      color: #00c6ff;
+    }
+
+    footer p {
+      font-size: 0.95rem;
+      margin: 0.4rem 0;
+    }
+
+    footer a {
+      color: #00c6ff;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>⚡ LeadCo Miner</h1>
+    <p>Collection of Basic interactive AI-powered tools I’ve built to learn </p>
+  </header>
+
+  <div class="tools-container">
+    <!-- Tool 1 -->
+    <div class="tool-card">
+      <h2>🧠 Company Data Extractor</h2>
+      <p>This tool fetches company information and returns it in natural language.</p>
+      <iframe src="https://app.relevanceai.com/form/f1db6c/da65c9d7-c8d9-4942-9dad-26ea18b96df1?version=latest" width="500px" height="750px" frameborder="0"></iframe>
+    </div>
+
+    <!-- Tool 2 -->
+    <div class="tool-card">
+      <h2>🔗 LinkedIn Profile Scraper</h2>
+      <p>Scrapes LinkedIn prospect profiles and gives structured insights.</p>
+      <iframe src="https://app.relevanceai.com/form/f1db6c/efb43dbf-1cb6-4374-ab47-7cebfd1a5373?version=latest"></iframe>
+    </div>
+
+    <!-- Tool 3 -->
+    <div class="tool-card3">
+      <h2>📊 Pre-Sales Report Generator</h2>
+      <p>Generates detailed pre-sales reports to help sales reps prepare for calls.</p>
+      <iframe src="https://app.relevanceai.com/form/f1db6c/f79463d3-b318-4742-a969-fe7da46ccb9d?version=latest"></iframe>
+    </div>
+  </div>
+
+  <!-- Feedback Section -->
+  <div class="feedback-section">
+    <h2>💬 Share Your Feedback</h2>
+    <p>Your thoughts will help me improve and build better tools. Please take a minute to fill this form!</p>
+    <iframe src="https://forms.gle/PP72MqJsrCXkpiyd7" width="640" height="900"></iframe>
+  </div>
+
+  <footer>
+    <h3>⚡ Thanks for Visiting</h3>
+    <p>© 2025 Darshan. Built with Relevance AI, Firecrawl & LLMs.</p>
+    <p>
+      <a href="https://x.com/Darshan_7424">Twitter</a> |
+      <a href="https://www.reddit.com/user/Southern-Movie-3913/">Reddit</a> |
+      <a href="prajapathdarshan@gmail.com">Email</a>
+    </p>
+  </footer>
+</body>
+</html>
